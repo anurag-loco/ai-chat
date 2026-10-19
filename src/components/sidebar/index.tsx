@@ -202,11 +202,16 @@ export default function Sidebar({
         )}
       >
         <motion.div layout transition={animationConfig}>
-          <ThemeSwitch />
+          <ThemeSwitch className="text-base" />
         </motion.div>
         <motion.div layout transition={animationConfig}>
           <Tooltip content="Settings" placement={collapsed ? "right" : "top"}>
-            <IconButton icon={<SettingsGearIcon />} onPress={onSettingsOpen} variant="light" />
+            <IconButton
+              icon={<SettingsGearIcon />}
+              iconSize={16}
+              onPress={onSettingsOpen}
+              variant="light"
+            />
           </Tooltip>
         </motion.div>
       </div>
