@@ -26,7 +26,7 @@ export default function ChatMessageEmpty({ onSubmit }: ChatMessagesProps) {
           y: 0,
         }}
         className={cn(
-          "bg-size animate-bg-position p-2 text-center text-4xl font-semibold text-transparent",
+          "bg-size animate-bg-position p-2 text-center text-[2.5rem] leading-tight font-semibold text-transparent md:text-5xl",
           "bg-gradient-to-r from-warning-700 from-30% via-primary-700 via-50% to-danger-500 to-80% bg-[length:200%_auto] bg-clip-text"
         )}
       >
